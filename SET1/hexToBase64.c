@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Function to convert hexadecimal character to its integer value
 int hexCharToInt(char c) {
     if (c >= '0' && c <= '9')
         return c - '0';
@@ -11,10 +10,9 @@ int hexCharToInt(char c) {
     else if (c >= 'A' && c <= 'F')
         return c - 'A' + 10;
     else
-        return -1;  // Invalid character
+        return -1; 
 }
 
-// Function to convert a hexadecimal string to binary string
 void hexToBinary(const char* hexString, char* binaryString) {
     int i, j = 0;
     for (i = 0; i < strlen(hexString); i++) {
